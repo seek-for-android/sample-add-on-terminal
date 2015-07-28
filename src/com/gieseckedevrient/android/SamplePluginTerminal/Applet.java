@@ -1,4 +1,4 @@
-package org.simalliance.openmobileapi.service.terminals.SamplePluginTerminal;
+package com.gieseckedevrient.android.SamplePluginTerminal;
 
 /**
  * This mock class implements a minimum subset of the original class 

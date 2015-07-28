@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.simalliance.openmobileapi.service.terminals.SamplePluginTerminal" android:versionCode="1" android:versionName="1.0" >
-    <application android:label="@string/app_name" />
-    <uses-sdk android:minSdkVersion="4" />
+    package="com.gieseckedevrient.android.SamplePluginTerminal"
+    android:versionCode="1"
+    android:versionName="1.0.1-SNAPSHOT" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.Light" >
+        <service android:name=".DummyTerminal"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="org.simalliance.openmobileapi.BIND_TERMINAL">
+            <intent-filter>
+                <action android:name="org.simalliance.openmobileapi.TERMINAL_DISCOVERY" />
+            </intent-filter>
+        </service>
+    </application>
+
 </manifest>

@@ -1,4 +1,4 @@
-package org.simalliance.openmobileapi.service.terminals.SamplePluginTerminal;
+package com.gieseckedevrient.android.SamplePluginTerminal;
 
 import java.util.Map;
 import java.util.Arrays;
